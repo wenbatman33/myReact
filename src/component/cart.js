@@ -14,7 +14,7 @@ class Cart extends React.Component {
   render() {
     const cartList = this.props.cart.map((item, idx) => <li key={idx}>{item}</li>);
     return (
-      <div calssName='Cart'>
+      <div className='Cart'>
         <Shelf addItem= { this.props.actions.addToCart } />
         <h2>Cart Items</h2>
         <ol>

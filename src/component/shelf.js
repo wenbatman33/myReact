@@ -16,7 +16,7 @@ export default class Shelf extends React.Component {
       return <li key={index}><button>[+]</button>{item}</li>
     });
     return (
-      <div calssName='Shelf'>
+      <div className='Shelf'>
         <h2></h2>
         <ul>
           {shelfItems}

@@ -5,7 +5,7 @@ import ContextPage from '@/views/ContextPage';
 
 let routes = [
   {
-    path: '/home',
+    path: '/',
     component: Home,
     meta:{
       title:'首页'

@@ -1,6 +1,5 @@
 import React from 'react';
-import routes from './router/routes'
-
+import routes from './router/routes';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,58 +10,25 @@ import './assets/scss/App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contextPage">ContextPage</Link></li>
-          <li><Link to="/reduxpages">ReduxPages</Link></li>
-        </ul>
-        <hr />
-      </div>
-      {/* <span>
-      {
-        routes.map((route, index)=>{
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            render={(props)=>{
-              if(route.children) {
-              } else {
-                document.title = route.meta.title;
-                return (<route.component props={props}></route.component>)
-              }
-            }}
-            >
-          </Route>
-        })
-      }
-      </span> */}
+    <div className="App container-fluid px-3">
       <Router>
-        <Switch>
-          {
-            routes.map((route, index)=>{
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                render={(props)=>{
-                  if(route.children) {
-                  } else {
-                    document.title = route.meta.title;
-                    return (<route.component props={props}></route.component>)
-                  }
-                }}
-                >
-              </Route>
-            })
-          }
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <div>
+          <div className='row my-3'>
+            {
+              routes.map((item, index) => {
+                return <div className='col' key={index}> <Link to={item.path}>{item.meta.title}</Link></div>
+              })
+            }
+          </div>
+          <hr />
+          <Switch>
+            {
+              routes.map((item, index) => {
+                return <Route key={index} exact path={item.path}> <item.component /> </Route>
+              })
+            }
+          </Switch>
+        </div>
       </Router>
     </div>
   );

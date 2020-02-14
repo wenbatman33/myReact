@@ -1,4 +1,9 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import Store from '@/store';
+import Cart from '@/component/cart'
+
+const StoreInstance = Store();
 
 export default class ReduxPages extends React.Component {
   constructor(props) {
@@ -6,9 +11,11 @@ export default class ReduxPages extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h2>ReduxPages</h2>
-      </div>
+      <Provider store={StoreInstance}>
+        <div>
+          <Cart />
+        </div>
+      </Provider>
     );
   }
 }

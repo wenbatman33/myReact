@@ -1,5 +1,5 @@
 import React from 'react';
-import MyContext from '@/component/context/MyContext';
+import MyContext from 'component/context/MyContext';
 
 class MyProvider extends React.Component {
     state = {

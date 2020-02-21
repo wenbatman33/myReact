@@ -1,6 +1,6 @@
 import React from 'react';
-import MyContext from '@/component/context/MyContext';
-import Car from '@/component/context/Car';
+import MyContext from 'component/context/MyContext';
+import Car from 'component/context/Car';
 
 const Cars = props => (
   <MyContext.Consumer>

@@ -1,0 +1,40 @@
+html,body{
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif !important;
+  user-select: none;
+}
+*{
+  box-sizing: border-box;
+}
+input, button{
+  outline: none;
+  outline: 0 !important;
+}
+a:-webkit-any-link {
+  color: none !important;
+}
+a{
+  color: none !important;
+  text-decoration: none !important;
+  &:hover{
+    color: none !important;
+    text-decoration: none !important;
+  }
+}
+h1,h2,h3,h4,h5,h6,p,div{
+  margin: 0;
+  letter-spacing: 1px !important;
+}
+p{
+  padding: 0 !important;
+}
+.cursorPointer{
+  cursor:pointer !important;
+}
+
+.container{
+  max-width: 1240px !important;
+  width: 1240px !important;
+}

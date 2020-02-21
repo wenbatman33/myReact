@@ -1,5 +1,5 @@
 import React from 'react'; 
-import Cars from '@/component/context/Cars';
+import Cars from 'component/context/Cars';
 
 const ProductList = props => (
   <div className="product-list">

@@ -1,7 +1,7 @@
-import Home from '@/views/Home';
-import About from '@/views/About';
-import ReduxPages from '@/views/ReduxPages';
-import ContextPage from '@/views/ContextPage';
+import Home from 'views/Home';
+import About from 'views/About';
+import ReduxPages from 'views/ReduxPages';
+import ContextPage from 'views/ContextPage';
 
 let routes = [
   {

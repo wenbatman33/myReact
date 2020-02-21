@@ -1,6 +1,10 @@
-import {createStore} from 'redux';
-import rootReducer from '@/reducers';
-
-export default (initialState) =>{
-  return createStore(rootReducer, initialState);
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import rootReducer from 'reducers/rootReducer';
+export default function configureStore(initialState={}) {
+  return createStore(
+    rootReducer,
+    initialState,
+    applyMiddleware(thunk)
+  );
 }

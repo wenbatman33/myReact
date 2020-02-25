@@ -1,31 +1,16 @@
 import React from 'react';
 
-// export default class Header extends React.Component {
-//   constructor(props){
-//     super(props);
-//     this.state = { isOn: this.props.nickName };
-//   }
-//   render() {
-//     return (
-//       <div className='header'>
-//         <div className='container'>
-//           <div className='row'>
-//             <div className='col-6'>Header</div>
-//             <div className='col-3'>{this.props.nickName}</div>
-//             <div className='col-3'>{this.state.isOn} 你好</div>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
 const Header = (props) =>(
   <div className='header'>
     <div className='container'>
       <div className='row'>
-        <div className='col-6'>Header</div>
-        <div className='col-3'>{props.nickName}</div>
+        <div className='col-4'>Header</div>
+        <div className='col-8 text-right'>
+          <span className='mr-4'><a href='/page_1'>page_1</a></span>
+          <span className='mr-4'><a href='/page_2'>page_2</a></span>
+          <span className='mr-4'><a href='/page_3'>page_3</a></span>
+          <span className='mr-4'><a href='/page_4'>page_4</a></span>
+        </div>
       </div>
     </div>
   </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types'
+
 
 export default class Page_3 extends React.Component {
   render() {
@@ -9,3 +11,5 @@ export default class Page_3 extends React.Component {
     );
   }
 }
+
+

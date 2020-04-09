@@ -21,6 +21,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <h2>Home</h2>
+        <hr/>
       </div>
     );
   }

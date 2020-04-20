@@ -10,6 +10,7 @@ const Header = (props) =>(
           <span className='mr-4'><a href='/page_2'>page_2</a></span>
           <span className='mr-4'><a href='/page_3'>page_3</a></span>
           <span className='mr-4'><a href='/page_4'>page_4</a></span>
+          <span className='mr-4'><a href='/rp'>rp</a></span>
         </div>
       </div>
     </div>

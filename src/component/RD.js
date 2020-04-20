@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { simpleAction } from 'actions/simpleAction';
 
-const mapDispatchToProps = dispatch => ({
-  simpleAction: () => dispatch(simpleAction())
-})
-const mapStateToProps = state => ({
-...state
-})
- 
+const mapDispatchToProps = dispatch => ({ simpleAction: () => dispatch(simpleAction())});
+const mapStateToProps = state => ({...state});
+
 class RD extends Component {
   simpleAction = (event) => {
     this.props.simpleAction();
@@ -24,6 +20,5 @@ class RD extends Component {
     );
   }
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(RD);
